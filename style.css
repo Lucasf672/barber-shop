@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e Logo Textual */
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d4af37;
+}
+
+.logo h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    color: #fff;
+}
+
+.logo span {
+    color: #d4af37;
+}
+
+.logo p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+/* Seções Gerais */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+section h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 36px;
+}
+
+/* Banner da Home com Imagem de Fundo */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 20px;
+    border-bottom: 3px solid #d4af37;
+}
+
+.btn-agendar {
+    background-color: #d4af37;
+    color: #121212;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-agendar:hover {
+    background-color: #fff;
+}
+
+/* Serviços */
+.tabela-servicos {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.servico {
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #d4af37;
+}
+
+/* Catálogo de Cortes (Estilo com Cards) */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-corte {
+    width: 220px;
+    background-color: #1a1a1a;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card-corte img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-corte h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 12px;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Footer */
+footer {
+    background-color: #0a0a0a;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsividade Básica para Celulares */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
